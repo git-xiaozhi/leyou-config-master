@@ -1,5 +1,5 @@
 server:
-  port: 30006
+  port: 8087
 spring:
   application:
     name: auth-service
@@ -16,7 +16,7 @@ eureka:
   instance:
     instance-id: ${spring.application.name}:${server.port}
     prefer-ip-address: true  #当你获取host时，返回的不是主机名，而是ip
-    ip-address: 192.168.1.102
+    #ip-address: 192.168.1.102
     lease-expiration-duration-in-seconds: 10 #10秒不发送九过期
     lease-renewal-interval-in-seconds: 5 #每隔5秒发一次心跳
 leyou:
