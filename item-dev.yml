@@ -4,7 +4,7 @@ spring:
   application:
     name: item-service
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/leyou?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=utf-8
+    url: jdbc:mysql://192.168.1.108:3306/leyou?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=utf-8
     username: root
     password: root
     hikari:
@@ -28,7 +28,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://127.0.0.1:10086/eureka
+      defaultZone: http://192.168.1.102:30002/eureka
     registry-fetch-interval-seconds: 5
   instance:
     instance-id: ${spring.application.name}:${server.port}
