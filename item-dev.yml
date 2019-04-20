@@ -28,8 +28,7 @@ spring:
 eureka:
   client:
     service-url:
-      #defaultZone: http://192.168.1.102:30002/eureka
-      defaultZone: http://leyou-registry:30002/eureka
+      defaultZone: http://192.168.1.102:30002/eureka
     registry-fetch-interval-seconds: 5
   instance:
     instance-id: ${spring.application.name}:${server.port}
