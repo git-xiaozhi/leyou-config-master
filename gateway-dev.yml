@@ -14,7 +14,7 @@ eureka:
       defaultZone: http://192.168.1.102:30002/eureka
     registry-fetch-interval-seconds: 5
   instance:
-    instance-id: ${spring.application.name}:${server.port}
+    instance-id: ${spring.application.name}-${random.int[10000,99999]}
     prefer-ip-address: true  #当你获取host时，返回的不是主机名，而是ip
     #ip-address: 192.168.1.102
 
